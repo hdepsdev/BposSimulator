@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OilId>
+  <OilId>
+    <name>92#汽油</name>
+    <id>0x01</id>
+  </OilId>
+  <OilId>
+    <name>0#柴油</name>
+    <id>0x10</id>
+  </OilId>
+</OilId>

@@ -1,0 +1,4 @@
+BposSimulator/obj/
+BposSimulator/bin/Debug/*.pdb
+BposSimulator/bin/Debug/*.vshost.*
+BposSimulator/bin/Debug/*.manifest

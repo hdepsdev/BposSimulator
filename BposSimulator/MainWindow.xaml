@@ -1,0 +1,36 @@
+﻿<Window x:Class="BposSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Width="Auto" Height="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="油枪编号:" Height="28" HorizontalAlignment="Left" Name="label1" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+        <TextBox Width="100" Height="28"  HorizontalAlignment="Left" Name="txtOilGun" Grid.Row="0" Grid.Column="1" DataContext="{Binding}" PreviewTextInput="txtOilGun_PreviewTextInput" />
+        <Label Content="油品类别:" Height="28" HorizontalAlignment="Left" Name="label2" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+        <ComboBox Width="100" Height="28" HorizontalAlignment="Left" Name="OilType" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+        <Label Content="油品编号:" Height="28" HorizontalAlignment="Left" Name="label3" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
+        <ComboBox Height="28" HorizontalAlignment="Left" Name="oilId" VerticalAlignment="Center" Width="100" Grid.Row="1" Grid.Column="3"/>
+        <Label Content="单价(元):" Height="28" HorizontalAlignment="Left" Name="label4" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+        <TextBox Height="28" HorizontalAlignment="Left" Name="oilPrice" Width="100" Grid.Row="2" Grid.Column="1" PreviewTextInput="decimal_PreviewTextInput" TextChanged="decimal_TextChanged" />
+        <Label Content="消费升数:" Height="28" HorizontalAlignment="Left" Name="label5" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
+        <TextBox Height="28" HorizontalAlignment="Left" Name="oilAmount" Width="100" Grid.Row="2" Grid.Column="3" PreviewTextInput="decimal_PreviewTextInput" TextChanged="decimal_TextChanged" />
+        <Label Content="总价(元):" Height="28" HorizontalAlignment="Left" Name="label6" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0"/>
+        <TextBox Height="28" HorizontalAlignment="Left" Name="oilCount" Width="100" Grid.Row="3" Grid.Column="1" PreviewTextInput="decimal_PreviewTextInput" IsEnabled="False" />
+        <Button Content="连接" Width="64"  HorizontalAlignment="Center" Name="btnConnect" VerticalAlignment="Center" Grid.Row="2" Grid.Column="4" Click="btnConnect_Click" />
+        <Button Content="发送" Width="64"  HorizontalAlignment="Center" Name="btnSend" VerticalAlignment="Center" Grid.Row="3" Grid.Column="4" IsEnabled="False" Click="btnSend_Click" />
+        <TextBox Name="txtDataRecved" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" />
+    </Grid>
+</Window>

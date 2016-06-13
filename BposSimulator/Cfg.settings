@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BposSimulator" GeneratedClassName="Cfg">
+  <Profiles />
+  <Settings>
+    <Setting Name="stationId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2143658709</Value>
+    </Setting>
+    <Setting Name="casherId" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">31</Value>
+    </Setting>
+    <Setting Name="user" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="pw" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="cmd" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">112</Value>
+    </Setting>
+    <Setting Name="Mac" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">00000001</Value>
+    </Setting>
+    <Setting Name="CRC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0000</Value>
+    </Setting>
+    <Setting Name="serverIp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10.1.1.124</Value>
+    </Setting>
+    <Setting Name="serverPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">4088</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
